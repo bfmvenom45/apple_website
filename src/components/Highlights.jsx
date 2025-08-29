@@ -1,8 +1,34 @@
-
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { rightImg, watchImg } from "../utils"
+import VideoCarousel from "./VideoCarousel"
 
 const Highlights = () => {
+useGSAP(() => {
+    // gsap code here
+    gsap.to("#title", {opacity:1, y:0}),
+    gsap.to(".link", {opacity:1, y:0, duration:1, stagger:0.25,  ease:'power3.out', delay:1})
+  }, [])  
+
   return (
-    <div>Highlights</div>
+    <section id="highlights" className="w-screen overflow-hidden h-full common-padding bg-zinc">
+      <div className="screen-max-width flex flex-col gap-10 py-10"> 
+        <div className="mb-12 w-full items-end md:flex justify-between" >
+          <h1 id="title" className="section-heading ">Get the Highlights.</h1>
+          <div className="flex flex-wrap gap-5 items-end">
+            <p className='link'>
+              Watch the film
+              <img src={watchImg} alt="watch" className="ml-2" />
+            </p>
+             <p className='link'>
+              Watch the event
+              <img src={rightImg} alt="right" className="ml-2" />
+            </p>
+          </div>
+        </div>
+        <VideoCarousel />
+      </div>
+    </section>
   )
 }
 
