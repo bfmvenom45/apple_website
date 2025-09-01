@@ -1,13 +1,14 @@
 
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 ---
 
-## О проекте
+## About the project
 
-Этот проект был создан по видеоуроку [JavaScript Mastery](https://www.youtube.com/watch?v=kRQbRAJ4-Fs&ab_channel=JavaScriptMastery).
+This project was created by following the video tutorial from [JavaScript Mastery](https://www.youtube.com/watch?v=kRQbRAJ4-Fs&ab_channel=JavaScriptMastery).
 
 ---
 
